@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+
 export default function Task(props: { nome: string, status: string, descricao: string }) {
     let resultado = null;
 
     if (props.status === "completado") {
-        resultado = <Text style={{ color: "green" }}>{props.status}</Text>;
+        resultado = <Text style={{ color: "green", fontWeight: "bold" }}>{props.status}</Text>;
     } else {
-        resultado = <Text style={{ color: "red" }}>{props.status}</Text>;
+        resultado = <Text style={{ color: "red", fontWeight: "bold" }}>{props.status}</Text>;
     }
 
     return (
@@ -20,16 +21,21 @@ export default function Task(props: { nome: string, status: string, descricao: s
 
 const styles = StyleSheet.create({
     task: {
-        width: 300,
-        height: 120,
+        width: 285,
+        height:170,
         borderWidth: 2,
-        borderColor: "white",
-        backgroundColor: "#4d3e3e13",
+        borderColor: "#000000",
+        backgroundColor: '#8e9e8d73',
         borderRadius: 40,
         alignContent: "center",
         alignItems: "flex-start",
-        padding: 15,
+        padding: 25,
         gap: 5,
+        boxShadow: '1px 1px 5px #000000',
+        left: 10,
+        marginBottom: 15,
+     
+      
     },
     titulo: {
         fontSize: 20,
