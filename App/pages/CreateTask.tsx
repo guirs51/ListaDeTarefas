@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, TextInput, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { LinearGradient } from "expo-linear-gradient"; // 👈 importa o degradê
+import { LinearGradient } from "expo-linear-gradient"; 
 
 export default function CreateTask() {
   const navigation = useNavigation<any>();
