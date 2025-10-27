@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "expo-cli": "^6.3.12"
+    "expo-cli": "^6.3.12",
+    "react-native-screens": "~3.22.0",
+    "react-native-safe-area-context": "4.6.3"
   }
 }
